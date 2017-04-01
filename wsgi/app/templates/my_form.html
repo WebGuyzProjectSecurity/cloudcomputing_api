@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}
+{% endblock %}
+{% block content %}
+<h6><p>The emotion app represents sentiment analysis. There are three types of images - happy, sad or neutral, which will show based on the emotional content of the sentence entered.</p>
+<p>The sentiment analysis consults with an external service using RESTful API</p>
+<img src="{{ url_for('static', filename = 'img/'+mood+'_face.jpeg')}}", width=80, height=60, quality=95 />
+<form action="" method="POST">
+ 	{{ form.csrf_token }}
+ 	{{ form.message.label }}
+ 	{{ form.message(size=200) }}
+    <input type=submit value="Send">
+</form>
+{% endblock %}
