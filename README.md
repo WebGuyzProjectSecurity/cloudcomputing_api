@@ -1,3 +1,8 @@
+This project is an example of deploying an API written in Python on OpenShift, which is a an open source open PaaS Platform as a Service.
+
+It has different features, which can be accessed through the navigation bar at the top of the page. The sentiment analysis uses an external service to fetch the information about detecting the emotion in the text by using RESTful API.
+
+
 Flask on OpenShift
 ==================
 
